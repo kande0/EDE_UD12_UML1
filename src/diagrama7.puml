@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+actor "new Actor" as new
+
+new -- (Identificarse)
+new -- (Pagar)
+
+new -- (Elegir mensajero)
+new -- (Confirmar)
+
+(Identificarse) <.. (Registrarse):<<extend>>
+(Pagar) <|-- (Pagar con tarjeta)
+(Pagar) <|-- (Pagar con transferencia)
+@enduml
