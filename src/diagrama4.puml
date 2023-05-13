@@ -1,0 +1,8 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+top to bottom direction
+
+(Pagar con tarjeta) --|> (Pagar)
+(Pagar en efectivo) --|> (Pagar)
+@enduml
