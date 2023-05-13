@@ -1,0 +1,13 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+actor Cliente
+
+Cliente -- (Confirmar pedido)
+Cliente -- (Cancelar pedido)
+
+(Confirmar pedido) ..> (Devolver cambio) : <<include>>
+(Cancelar pedido) ..> (Devolver cambio) : <<include>>
+@enduml
