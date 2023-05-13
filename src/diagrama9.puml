@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+Ciudadano -- (Registrar Entrada)
+"Ciudadano extranjero" -- (Tomar huellas)
+
+Ciudadano <|- "Ciudadano extranjero"
+(Tomar huellas) ..> (Registrar Entrada):<<extend>>
+@enduml
