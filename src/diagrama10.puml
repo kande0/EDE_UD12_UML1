@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+usecase sacar as "
+Sacar dinero
+--
++ solicitud hecha"
+
+usecase retener as "Retener tarjeta"
+
+sacar <.. retener:<<Extend>>
+
+note right of sacar
+           Description
+..
+condición:
+    { historia sospechosa }
+punto de extensión:
+    solicitud hecha
+end note
+@enduml
