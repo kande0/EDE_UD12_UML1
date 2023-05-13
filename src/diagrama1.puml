@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+actor Cliente
+actor Restaurante
+
+rectangle {
+    Cliente -- (Mostrar menú)
+    Cliente -- (Pedir comida)
+}
+
+(Mostrar menú) -- Restaurante
+(Entregar comida) -- Restaurante
+@enduml
